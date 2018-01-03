@@ -1,6 +1,6 @@
 # import the necessary packages
 import requests
-import cv2
+import cv2 
 
 # define the URL to our face detection API
 url = "http://localhost:8000/face_detection/predict/"
@@ -14,5 +14,5 @@ r = requests.post(url, files=payload).json()
 print "test-b.png: {}".format(r)
 
 # show the output image
-cv2.imshow("test-b.png", image)
-cv2.waitKey(0) 
+# cv2.imshow("test-b.png", image)
+# cv2.waitKey(0) 

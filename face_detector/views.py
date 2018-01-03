@@ -6,7 +6,9 @@ import urllib
 import json
 import cv2
 import os
+import cPickle
 import pickle
+import gzip
 from skimage.feature import hog
 
 
@@ -44,7 +46,7 @@ def predict(request):
 		# and detect faces in the image
 		hist = hog(image, orientations=9, pixels_per_cell=(14, 14), cells_per_block=(1, 1), visualise=False)
 		testing_set.append(hist)
-		clf = pickle.load(open('pickled_data', 'rb'))
+		clf = load_zipped_pickle('pickled_data')
 		y = clf.predict(testing_set)
 
 		# update the data dictionary with the faces detected
@@ -94,3 +96,9 @@ def jsonify(data):
             value = value.tolist()
         json_data[key] = value
     return json_data
+
+
+def load_zipped_pickle(filename):
+    with gzip.open(filename, 'rb') as f:
+        loaded_object = cPickle.load(f)
+        return loaded_object

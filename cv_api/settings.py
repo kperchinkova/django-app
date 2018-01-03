@@ -14,6 +14,7 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
@@ -30,9 +31,9 @@ TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = []
 
 # Heroku: Update database configuration from $DATABASE_URL.
-
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
+DATABASES = { 'default': dj_database_url.config(conn_max_age=500) }
+# db_from_env = dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db_from_env)
 
 
 # Application definition
