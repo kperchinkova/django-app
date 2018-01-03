@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['jmagdeska.pythonanywhere.com']
+ALLOWED_HOSTS = ['kperchinkova.pythonanywhere.com']
 
 
 # Application definition
