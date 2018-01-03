@@ -58,8 +58,6 @@ def predict(request):
 
 def _grab_image(path=None, stream=None, url=None):
 	# if the path is not None, then load the image from disk
-
-
 	if path is not None:
 		g_image = cv2.imread(path, 0)
 
