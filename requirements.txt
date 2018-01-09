@@ -122,7 +122,7 @@ pytest==3.0.5
 python-dateutil==2.6.0
 python-for-android==0.6.0
 pytz==2016.10
-pywin32==221
+pywin32
 PyYAML==3.12
 pyzmq==16.0.2
 QtAwesome==0.4.3
