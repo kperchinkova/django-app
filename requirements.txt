@@ -1,6 +1,6 @@
 alabaster==0.7.9
 anaconda-client==1.2.2
-anaconda-project==0.4.1
+anaconda-project==0.8.2
 appdirs==1.4.3
 argcomplete==1.0.0
 astroid==1.4.9
