@@ -95,7 +95,7 @@ opencv-python==3.3.0.10
 openpyxl==2.4.1
 pandas==0.19.2
 partd==0.3.7
-path.py==0.0.0
+path.py==2.2.2
 pathlib2==2.2.0
 patsy==0.4.1
 pep8==1.7.0
