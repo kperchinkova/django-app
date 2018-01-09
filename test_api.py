@@ -3,7 +3,7 @@ import requests
 import cv2
 
 # define the URL to our face detection API
-url = "http://localhost:8000/handgesturerecognition/predict/"
+url = "http://192.168.0.104:8000/handgesturerecognition/predict/"
 
 # load our image and now use the face detection API to find faces in
 # images by uploading an image directly
